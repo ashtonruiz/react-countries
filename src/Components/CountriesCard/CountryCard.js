@@ -9,4 +9,6 @@ export default function CountryCard({ name, }) {
   );
 }
 
-// Need to figure out how to implement photos of flags. Rubric says Flagpedia API. I don't think I know how to use APIs but maybe I do and I just don't realize it? Need TA
+// Need to figure out how to implement photos of flags. Rubric says Flagpedia API. 
+// I don't think I know how to use APIs but maybe I do and I just don't realize it? 
+// Need TA

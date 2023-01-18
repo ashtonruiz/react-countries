@@ -11,7 +11,3 @@ export default function Main() {
     </main>
   );
 }
-
-// not confident I am mapping through these correctly. 
-// I am wondering if lines 8 & 9 should actually be 
-// "countries" and "{countries.id}". Will ask TA.
