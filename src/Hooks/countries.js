@@ -3,14 +3,19 @@ import { fetchCountries } from '../services/FetchCountries.js';
 
 export function useCountries() {
   const [countries, setCountries] = useState([]);
+  const [error, setError] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
-      const resp = await fetchCountries();
-      setCountries(resp);
+      try {
+        const resp = await fetchCountries();
+        setCountries(resp);
+      } catch (e) {
+        setError('Uh oh! Something went wrong, bestie');
+      }
     };
     fetchData();
   }, []);
-  return countries;
+  return { countries, error };
 }
 
 // do I even need this page? I think so? 
