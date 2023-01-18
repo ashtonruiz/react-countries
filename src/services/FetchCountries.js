@@ -5,3 +5,7 @@ export async function fetchCountries() {
   console.log(response, 'this one');
   return checkError(response);
 }
+
+// console.log is currently not showing anything in the console. 
+// server is showing white screen which tells me we are either 
+// getting nothing from SupaBase or my main.js function is bad
